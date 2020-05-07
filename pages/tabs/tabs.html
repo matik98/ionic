@@ -1,0 +1,8 @@
+<ion-tabs>
+  <ion-tab 
+    [root]="homePage.page" tabTitle="{{homePage.title}}" tabIcon="home">
+  </ion-tab>
+  <ion-tab 
+    *ngFor="let root of pages" [root]="root.page" tabTitle="{{root.title}}" tabIcon="home">
+  </ion-tab>
+</ion-tabs>
